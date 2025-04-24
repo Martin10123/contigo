@@ -20,20 +20,17 @@ export const RecoverPassword = () => {
           <input
             type="email"
             id="email"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="correo@gmail-hotmail.com..."
           />
         </div>
 
-        <button className="w-full text-white bg-blue-600 cursor-pointer hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+        <button className="w-full text-white bg-septenary cursor-pointer hover:bg-quinary focus:ring-4 focus:outline-none focus:ring-quinary font-medium rounded-lg text-sm px-5 py-2.5 text-center">
           Recuperar contraseña
         </button>
 
         <div className="flex items-center justify-end mt-4">
-          <Link
-            to="/auth/login"
-            className="text-sm text-blue-700 hover:underline dark:text-blue-500"
-          >
+          <Link to="/auth/login" className="text-sm text-white hover:underline">
             Recorde mi contraseña
           </Link>
         </div>

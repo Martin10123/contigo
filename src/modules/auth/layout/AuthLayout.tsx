@@ -14,8 +14,8 @@ export const AuthLayout = ({
   title,
 }: AuthLayoutProps) => {
   return (
-    <div className="container mx-auto p-4 min-h-dvh lg:grid lg:grid-cols-2 lg:items-center before:content before:w-full before:fixed before:top-0 before:left-0 before:bg-[#F9F9F9] before:-z-30 before:h-full">
-      <div className="bg-white shadow-md rounded-lg p-3 max-w-xl w-full flex flex-col items-center justify-center gap-4">
+    <div className="container mx-auto p-4 min-h-dvh lg:grid lg:grid-cols-2 lg:items-center before:content before:w-full before:fixed before:top-0 before:left-0 before:bg-quaternary before:-z-30 before:h-full">
+      <div className="bg-quinary shadow-md rounded-lg p-3 max-w-xl w-full flex flex-col items-center justify-center gap-4">
         <div className="">
           <img
             className="w-full max-w-[18rem] h-auto object-contain"
@@ -25,7 +25,7 @@ export const AuthLayout = ({
         </div>
 
         <div className="border-t border-gray-200 w-full pt-4">
-          <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
+          <h1 className="!text-2xl font-bold text-center text-gray-800 mb-4 lg:!text-3xl">
             {title}
           </h1>
           <p className="text-center text-gray-600 mb-4 lg:text-lg lg:leading-6">
@@ -34,7 +34,7 @@ export const AuthLayout = ({
 
           {children}
 
-          <p className="text-center text-gray-500 text-sm mt-4 mb-4">
+          <p className="text-center text-white text-sm mt-4 mb-4">
             {descriptionFooter}
           </p>
         </div>
