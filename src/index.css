@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+@theme {
   --color-primary: #f5f5f5; /* blanco humo */
   --color-secondary: #d0e8f2; /* celeste */
   --color-tertiary: #c4d7e0; /* lavanda */
@@ -9,9 +9,13 @@
   --color-senary: #fca5a1; /* rosado claro */
   --color-septenary: #f87171; /* rojo claro */
   --color-octonary: #ef4444; /* rojo */
-  --color-nonary: #dc2626; /* rojo oscuro */
+  --color-nonary: #27323a; /* oscuro */
 }
 
 * {
   box-sizing: border-box;
+}
+
+main {
+  display: grid;
 }

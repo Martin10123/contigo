@@ -1,3 +1,4 @@
+import { HomePage } from "../modules/home/HomePage";
 import { LoginAuth } from "../modules/auth/pages/LoginAuth";
 import { RecoverPassword } from "../modules/auth/pages/RecoverPassword";
 import { RegisterAuth } from "../modules/auth/pages/RegisterAuth";
@@ -13,6 +14,8 @@ export const AppRouter = () => {
           <Route path="/auth/login" element={<LoginAuth />} />
           <Route path="/auth/register" element={<RegisterAuth />} />
           <Route path="/auth/recover-password" element={<RecoverPassword />} />
+
+          <Route path="/" element={<HomePage />} />
 
           <Route path="/*" element={<Navigate to="/auth/welcome" />} />
         </Routes>
