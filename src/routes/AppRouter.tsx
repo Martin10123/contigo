@@ -4,6 +4,7 @@ import { RecoverPassword } from "../modules/auth/pages/RecoverPassword";
 import { RegisterAuth } from "../modules/auth/pages/RegisterAuth";
 import { WelcomeAuth } from "../modules/auth/pages/WelcomeAuth";
 import { Navigate, Route, Routes } from "react-router";
+import { DailyPage } from "../modules/daily/DailyPage";
 
 export const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ export const AppRouter = () => {
           <Route path="/auth/recover-password" element={<RecoverPassword />} />
 
           <Route path="/" element={<HomePage />} />
+          <Route path="/daily" element={<DailyPage />} />
 
           <Route path="/*" element={<Navigate to="/auth/welcome" />} />
         </Routes>
